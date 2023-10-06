@@ -299,7 +299,7 @@ progress {
   padding: 10px 20px;
   margin: 10px auto;
   border-radius: 5px;
-  width: 150px;
+  width: 100px;
   text-align: center;
   transition: background-color 0.3s;
 }
