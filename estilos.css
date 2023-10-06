@@ -1,0 +1,367 @@
+
+
+:root {
+    --corPrincipal: #4056a1;
+    --corSecundaria: #efe2ba;
+    --corTerciaria: #d79922;
+    --corAlerta: #f13c20;
+    --corClara: #c5cbe3;
+    --corEscura: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--corSecundaria);
+}
+
+.header {
+    padding: 50px calc(10% + 2vw);
+    background-image: linear-gradient(var(--corPrincipal), var(--corEscura));
+    color: white;
+    width: 100%;
+}
+
+.header td {
+    vertical-align: middle;
+}
+
+.logo {
+    width: 1%;
+    padding-right: 2vw;
+}
+
+.header img {
+    width: 9vw;
+    height: 9vw;
+    border-radius: 50%;
+}
+
+.header b {
+    font-size: 4vw;
+}
+
+.header small {
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tabela {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 2vw;
+}
+
+.menu {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.menu a {
+    font-family: "Caveat";
+    display: inline-block;
+    padding: 10px 4vw;
+    font-size: 3vw;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    margin: .7vw;
+}
+
+.menu a:hover {
+    color: var(--corClara);
+    background-color: var(--corPrincipal);
+}
+
+.menu a.active {
+    color: white;
+    background-color: var(--corEscura);
+}
+
+.hero h1 {
+    font-size: 4vw;
+    color: var(--corTerciaria);
+}
+
+.hero h2 {
+    font-size: 3vw;
+    font-family: "Caveat";
+    color: var(--corClara);
+    line-height: 3vw;
+}
+
+.hero h3 {
+    font-size: 2vw;
+    font-family: "Caveat";
+    color: white;
+}
+
+.hero td:first-child {
+    background-color: var(--corEscura);
+    padding: 2vw;
+    border-radius: 20px;
+    border-collapse: separate;
+}
+
+.hero a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--corPrincipal);
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    font-weight: bold;
+}
+
+.hero a:hover {
+    outline: solid 2px var(--corTerciaria);
+    outline-offset: -2px;
+}
+
+.hero img {
+    border-radius: 20px;
+}
+
+.td1 {
+    width: 12vw;
+}
+
+.paginas a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--corEscura);
+}
+
+.paginas {
+    font-size: 2vw;
+}
+
+.experiencias {
+    font-size: 2vw;
+}
+
+.experiencias td:first-child {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.projetos {
+    font-size: 2vw;
+}
+
+.projetos td:first-child {
+    width: 1%;
+    white-space: nowrap;
+}
+
+.projetos img {
+    width: 25vw;
+}
+
+progress {
+    height: 4vw;
+}
+
+.formcontato {
+    font-size: 2vw;
+}
+
+.formcontato select,
+.formcontato input,
+.formcontato textarea {
+    font-size: 2vw;
+    padding: .5vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+    width: 40vw;
+    border: solid 1px var(--corEscura);
+}
+
+.formcontato button {
+    font-size: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    margin-bottom: 1vw;
+    background-color: var(--corPrincipal);
+    color: white;
+}
+
+.formcontato hr {
+    margin: 2vw 0;
+}
+
+.footer {
+    padding: 30px calc(10% + 2vw);
+    color: var(--corEscura);
+    text-align: center;
+    background-color: white;
+    border-top: solid 1px var(--corEscura);
+}
+
+.footer img {
+    width: 10vw;
+}
+
+.pt1 {
+    padding-top: 10px;
+}
+
+.pt2 {
+    padding-top: 20px;
+}
+
+.pt3 {
+    padding-top: 30px;
+}
+
+.pt4 {
+    padding-top: 40px;
+}
+
+.pt5 {
+    padding-top: 50px;
+}
+
+.p1 {
+    padding: 5px;
+}
+
+.p2 {
+    padding: 10px;
+}
+
+.p3 {
+    padding: 15px;
+}
+
+.p4 {
+    padding: 20px;
+}
+
+.p5 {
+    padding: 25px;
+}
+
+/* Estilos para a seção de preços */
+.precos {
+  text-align: center; 
+  background-color: #efe2ba; /* Cor de fundo */
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Estilos para o título da seção */
+.titulo-secao h2 {
+  color: #000000; /* Cor do texto */
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Estilos para as tabelas de preços */
+.precos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+/* Estilos para as células das tabelas de preços */
+.precos table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #000000; 
+  background-color: #ebffe5; 
+}
+
+/* Estilos para o texto dentro das células */
+.precos span {
+  font-size: 16px;
+  color: #333; /* Cor do texto */
+  display: block;
+}
+
+/* Estilos para os botões de contratar */
+.precos .btn {
+  display: block;
+  background-color: #4CAF50; /* Cor de fundo verde */
+  color: #ffffff; /* Cor do texto branco */
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 150px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Estilo de botão em hover (quando o mouse passa por cima) */
+.precos .btn:hover {
+  background-color: #45A049; /* Cor de fundo ligeiramente mais escura */
+}
+
+/* Estilos para centralizar o texto nas células */
+.precos table td span, .precos table td h3, .precos table td h2 {
+  text-align: center;
+}
+
+.github-logo {
+    max-width: 200px; 
+    height: auto; 
+}
+
+.github-title {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+span {
+            text-align: center;
+        }
+
+ .music-video-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .music-video-section h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .music-video-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .music-video-list li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .music-video-list h2 {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .music-video-list audio,
+        .music-video-list video {
+            width: 100%;
+            max-width: 300px;
+        }
+
+  .conteudo-secao table {
+    max-width: 800px; 
+    margin: 0 auto; 
+  }
+h1{
+  text-align: center;
+}
